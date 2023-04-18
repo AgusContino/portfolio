@@ -1,0 +1,50 @@
+/*-----------COLORES-----------*/
+html {
+  font-size: 62.5%;
+}
+
+/*--------Seccion: Sobre mi----------*/
+.sobreMi {
+  height: 90vh;
+  display: flex;
+  padding: 0 10vw 0 10vw;
+}
+.sobreMi .sobreMi__foto {
+  width: 50vw;
+  padding: 2vw;
+  display: flex;
+}
+.sobreMi .sobreMi__foto img {
+  height: 100%;
+  object-fit: cover;
+  margin: auto;
+}
+.sobreMi .sobreMi__info {
+  width: 50vw;
+  padding: 2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sobreMi .sobreMi__info h1 {
+  margin: 10vh 0 0.5rem 0;
+}
+.sobreMi .sobreMi__info p {
+  font-size: 1.5rem;
+  text-align: justify;
+  margin: 5vh 0 5vh 0;
+}
+.sobreMi .sobreMi__info .sobreMi__enlaces {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.sobreMi .sobreMi__info .sobreMi__enlaces a {
+  /*---QUEDA HACER ESTILO DE BOTONES---*/
+}
+
+.header__nav {
+  height: 10vh;
+}
+
+/*# sourceMappingURL=style.css.map */
