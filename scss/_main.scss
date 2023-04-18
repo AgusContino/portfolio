@@ -45,7 +45,13 @@ html{
             justify-content: space-between;
 
             a{
-                /*---QUEDA HACER ESTILO DE BOTONES---*/
+                font-size: 2rem;
+                text-decoration: none;
+                text-align: center;
+                width: 25%;
+                padding: 1rem;
+                border: 2px solid $risd-blue;
+                border-radius: 5px;
             }
         }
     }
