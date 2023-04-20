@@ -58,23 +58,54 @@ html {
   flex-direction: column;
   align-items: center;
   min-height: 50vh;
+  padding: 5vh 10vw 5vh 10vw;
 }
 .tecnologias .tecnologias__contenedor {
-  padding: 10vh 10vw 10vh 10vw;
   display: flex;
+  padding: 5vh 0 0 0;
 }
 .tecnologias .tecnologias__contenedor div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 25%;
+  flex-basis: 0;
+  flex-grow: 1;
 }
 .tecnologias .tecnologias__contenedor div img {
-  height: 50%;
+  max-height: 165px;
 }
 .tecnologias .tecnologias__contenedor div p {
   font-size: 1.5rem;
   text-align: center;
+  width: 80%;
+}
+
+/*--------Seccion: Otras habilidades----------*/
+.habilidades {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 50vh;
+  padding: 5vh 10vw 5vh 10vw;
+}
+.habilidades .habilidades__contenedor {
+  display: flex;
+  padding: 5vh 0 0 0;
+}
+.habilidades .habilidades__contenedor div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 0;
+  flex-grow: 1;
+}
+.habilidades .habilidades__contenedor div img {
+  max-height: 165px;
+}
+.habilidades .habilidades__contenedor div p {
+  font-size: 1.5rem;
+  text-align: center;
+  width: 80%;
 }
 
 .header__nav {
