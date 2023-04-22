@@ -1,27 +1,27 @@
-html{
+html {
     font-size: 62.5%;
 }
 
 /*--------Seccion: Sobre mi----------*/
 
-.sobreMi{
+.sobreMi {
     min-height: 90vh;
     display: flex;
     padding: 0 10vw 0 10vw;
 
-    .sobreMi__foto{
+    .sobreMi__foto {
         width: 50vw;
         padding: 2vw;
         display: flex;
 
-        img{
+        img {
             height: 100%;
             object-fit: cover;
             margin: auto;
         }
     }
 
-    .sobreMi__info{
+    .sobreMi__info {
         width: 50vw;
         padding: 2vw;
 
@@ -29,25 +29,26 @@ html{
         flex-direction: column;
         align-items: center;
 
-        h1{
+        h1 {
             margin: 10vh 0 0.5rem 0;
         }
-        h2{
+
+        h2 {
             margin: 0;
         }
 
-        p{
+        p {
             font-size: 1.5rem;
             text-align: justify;
             margin: 5vh 0 5vh 0;
         }
 
-        .sobreMi__enlaces{
+        .sobreMi__enlaces {
             width: 100%;
             display: flex;
             justify-content: space-between;
 
-            a{
+            a {
                 font-size: 2rem;
                 text-decoration: none;
                 text-align: center;
@@ -58,34 +59,34 @@ html{
             }
         }
     }
-    
+
 }
 
 /*--------Seccion: Tecnologias----------*/
 
-.tecnologias{
+.tecnologias {
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 50vh;
     padding: 5vh 10vw 5vh 10vw;
 
-    .tecnologias__contenedor{
+    .tecnologias__contenedor {
         display: flex;
         padding: 5vh 0 0 0;
 
-        div{
+        div {
             display: flex;
             flex-direction: column;
             align-items: center;
             flex-basis: 0;
             flex-grow: 1;
 
-            img{
+            img {
                 max-height: 165px;
             }
 
-            p{
+            p {
                 font-size: 1.5rem;
                 text-align: center;
                 width: 80%;
@@ -97,32 +98,97 @@ html{
 
 /*--------Seccion: Otras habilidades----------*/
 
-.habilidades{
+.habilidades {
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 50vh;
     padding: 5vh 10vw 5vh 10vw;
 
-    .habilidades__contenedor{
+    .habilidades__contenedor {
         display: flex;
         padding: 5vh 0 0 0;
 
-        div{
+        div {
             display: flex;
             flex-direction: column;
             align-items: center;
             flex-basis: 0;
             flex-grow: 1;
 
-            img{
+            img {
                 max-height: 165px;
             }
 
-            p{
+            p {
                 font-size: 1.5rem;
                 text-align: center;
                 width: 80%;
+            }
+        }
+    }
+
+}
+
+/*--------Seccion : Proyectos----------*/
+
+.proyectos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vh 10vw 5vh 10vw;
+
+    p {
+        font-size: 1.5rem;
+        text-align: justify;
+        margin: 5vh 0 5vh 0;
+        line-height: 2;
+    }
+
+    .proyectos__contenedorA {
+        display: flex;
+        min-height: 30vh;
+        padding: 5vh 0 5vh 0;
+
+        .proyectos__img {
+            width: 50%;
+            display: flex;
+            padding: 0 4vw 0 4vw;
+
+            img {
+                height: 100%;
+                object-fit: cover;
+                margin: auto;
+                border-radius: 50px 0 50px 0;
+            }
+        }
+
+        .proyectos__info {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+
+            p {
+                font-size: 1.5rem;
+                text-align: justify;
+                margin: auto;
+                line-height: 2;
+            }
+
+            .proyectos__enlaces {
+                display: flex;
+
+                a {
+                    font-size: 1.5rem;
+                    text-decoration: none;
+                    text-align: center;
+                    width: 20%;
+                    padding: 1rem;
+                    border: 2px solid $risd-blue;
+                    border-radius: 5px;
+                    box-sizing: border-box;
+                    margin: 1rem 1rem 0 0;
+                }
             }
         }
     }
