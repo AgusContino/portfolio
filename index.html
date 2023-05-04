@@ -13,27 +13,27 @@
 
 <body>
 
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary header__nav">
+    <header id="header">
+        <nav class="navbar navbar-expand-lg header__nav">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Agustin Contino</a>
+                <a class="navbar-brand header__brand" href="#header">Agustín Contino</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
+                    <ul class="navbar-nav ms-auto nav__lista">
                         <li class="nav-item">
-                            <a class="nav-link" href="#sobreMi">Sobre mí</a>
+                            <a class="nav-link nav__link" href="#sobreMi">Sobre mí</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#tecnologias">Tecnologias</a>
+                            <a class="nav-link nav__link" href="#tecnologias">Tecnologias</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#proyectos">Proyectos</a>
+                            <a class="nav-link nav__link" href="#proyectos">Proyectos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contacto">Contacto</a>
+                            <a class="nav-link nav__link nav__link--z" href="#contacto">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -74,6 +74,7 @@
             </div>
 
         </section>
+        <hr>
 
         <!--------------TECNOLOGIAS-------------->
         <section id="tecnologias" class="tecnologias">
@@ -160,6 +161,7 @@
             </div>
 
         </section>
+        <hr>
 
         <!--------------PROYECTOS-------------->
         <section id="proyectos" class="proyectos">
@@ -180,7 +182,10 @@
             <div class="proyectos__contenedorA">
 
                 <div class="proyectos__img">
-                    <img class="img-fluid" src="./media/crypto-rocket.jpg" alt="">
+                    <a target="_blank" href="https://cryptorocket.netlify.app/">
+                        <img class="img-fluid" src="./media/crypto-rocket.jpg"
+                            alt="miniatura de portada del sitio crypto rocket">
+                    </a>
                 </div>
 
                 <div class="proyectos__info">
@@ -202,59 +207,74 @@
                 </div>
 
             </div>
+            <hr>
 
             <!----------PROYECTOS: proyecto B---------->
             <div class="proyectos__contenedorB">
 
-                <div>
+                <div class="proyectos__info">
 
                     <h3>Sin Apagón</h3>
-                    <h4>Real (no publicado)</h4>
+                    <h4>Ficticio</h4>
 
-                    <p>Sitio web desarrollado para el colectivo teatral "Sin Apagón". Brinda informacion sobre sus obras
-                        y cursos teatrales.
+                    <p>
+                        Sitio web estatico pensado para funcionar como plataforma web para el colectivo teatral Sin
+                        Apagon. Fue desarrollado con HTML y CSS. Las fotografias son de autoria propia, trabajadas con
+                        Adobe Phoroshop.
                     </p>
 
-                    <a href="">Sitio web</a>
-                    <a href="">Repositorio</a>
+                    <div class="proyectos__enlaces">
+                        <a target="_blank" href="https://sinapagon.netlify.app/">Sitio web</a>
+                        <a target="_blank" href="https://github.com/AgusContino/sin-apagon">Repositorio</a>
+                    </div>
 
                 </div>
 
-                <div>
-                    <img src="" alt="">
+                <div class="proyectos__img">
+                    <a target="_blank" href="https://sinapagon.netlify.app/">
+                        <img class="img-fluid" src="./media/sin-apagon.jpg"
+                            alt="miniatura de portada del sitio sin apagon">
+                    </a>
                 </div>
 
             </div>
 
         </section>
+        <hr>
 
         <!--------------CONTACTO-------------->
-        <section id="contacto">
+        <section id="contacto" class="contacto">
 
             <h2>Contacto</h2>
 
-            <form action="">
+            <form action="https://formsubmit.co/f789343cfff0074684728568551d566f" method="POST">
 
-                <label for="nombre">Name</label>
-                <input id="nombre" type="text">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" type="text" name="nombre">
 
                 <label for="e-mail">e-mail</label>
-                <input id="e-mail" type="email">
+                <input id="e-mail" type="email" name="email">
 
-                <label for="telefono">Telefono (opcional)</label>
-                <input id="telefono" type="email">
+                <input type="hidden" name="_autoresponse"
+                    value="¡Gracias por su mensaje! Me pondré en contacto a la brevedad. Por favor, no responda a esta casilla.">
+
+                <label for="telefono">Teléfono (opcional)</label>
+                <input id="telefono" type="text" name="telefono">
 
                 <label for="mensaje">Mensaje</label>
-                <textarea name="" id="mensaje" cols="30" rows="10""></textarea>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
 
-                <input type=" submit">
+                <input class="contacto__submit" type="submit" value="ENVIAR">
+
+                <!-- agregar una vez subido al servidor, REEMPLAZAR DOMINIOOO !!
+                    <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"> -->
 
             </form>
 
-            <div>
+            <div class="contacto__datos">
 
                 <p>
-                    Agustin Contino<br>
+                    Agustín Contino<br>
                     (+54)(911) 4049-9892<br>
                     agusconti1994@gmail.com<br>
                     Buenos Aires, Argentina

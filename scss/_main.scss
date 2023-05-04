@@ -2,6 +2,15 @@ html {
     font-size: 62.5%;
 }
 
+hr {
+    width: 80%;
+    margin: auto;
+    height: 1px;
+    background-color: $rose;
+    border: none;
+    opacity: 100%;
+}
+
 /*--------Seccion: Sobre mi----------*/
 
 .sobreMi {
@@ -56,6 +65,13 @@ html {
                 padding: 1rem;
                 border: 2px solid $risd-blue;
                 border-radius: 5px;
+                transition: 0.5s;
+
+                &:hover {
+                    background-color: $risd-blue;
+                    color: white;
+                    border: 2px solid $risd-blue;
+                }
             }
         }
     }
@@ -70,6 +86,10 @@ html {
     align-items: center;
     min-height: 50vh;
     padding: 5vh 10vw 5vh 10vw;
+
+    h2{
+        font-size: 2.5rem;
+    }
 
     .tecnologias__contenedor {
         display: flex;
@@ -138,6 +158,10 @@ html {
     align-items: center;
     padding: 5vh 10vw 5vh 10vw;
 
+    h2{
+        font-size: 2.5rem;
+    }
+
     p {
         font-size: 1.5rem;
         text-align: justify;
@@ -145,6 +169,7 @@ html {
         line-height: 2;
     }
 
+    /*--------Proyectos: Contenedor A----------*/
     .proyectos__contenedorA {
         display: flex;
         min-height: 30vh;
@@ -167,6 +192,7 @@ html {
             width: 50%;
             display: flex;
             flex-direction: column;
+            padding: 0 4vw 0 0;
 
             p {
                 font-size: 1.5rem;
@@ -188,9 +214,148 @@ html {
                     border-radius: 5px;
                     box-sizing: border-box;
                     margin: 1rem 1rem 0 0;
+                    transition: 0.5s;
+
+                    &:hover {
+                        background-color: $risd-blue;
+                        color: white;
+                        border: 2px solid $risd-blue;
+                    }
                 }
             }
         }
     }
 
+    hr{
+        width: 50%;
+        height: 0.5px;
+    }
+    /*--------Proyectos: Contenedor B----------*/
+    .proyectos__contenedorB {
+        display: flex;
+        min-height: 30vh;
+        padding: 5vh 0 5vh 0;
+
+        .proyectos__img {
+            width: 50%;
+            display: flex;
+            padding: 0 4vw 0 4vw;
+
+            img {
+                height: 100%;
+                object-fit: cover;
+                margin: auto;
+                border-radius: 0 50px 0 50px;
+            }
+        }
+
+        .proyectos__info {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            padding: 0 0 0 4vw;
+
+            p {
+                font-size: 1.5rem;
+                text-align: justify;
+                margin: auto;
+                line-height: 2;
+            }
+
+            .proyectos__enlaces {
+                display: flex;
+
+                a {
+                    font-size: 1.5rem;
+                    text-decoration: none;
+                    text-align: center;
+                    width: 20%;
+                    padding: 1rem;
+                    border: 2px solid $risd-blue;
+                    border-radius: 5px;
+                    box-sizing: border-box;
+                    margin: 1rem 1rem 0 0;
+                    transition: 0.5s;
+
+                    &:hover {
+                        background-color: $risd-blue;
+                        color: white;
+                        border: 2px solid $risd-blue;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/*--------Seccion : Contacto----------*/
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 50vh;
+    padding: 5vh 10vw 5vh 10vw;
+
+    h2{
+        font-size: 2.5rem;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        background-color: $rose;
+        padding: 30px 50px 30px 50px;
+        border-radius: 25px;
+        margin: 50px 0 0 0;
+        width: 400px;
+
+        label {
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        input {
+            height: 3rem;
+            margin: 0 0 10px 0;
+            border-radius: 3px;
+            border: none;
+            font-size: 1.5rem;
+            &:focus{
+                outline: none;
+                border: 2px solid $risd-blue;
+            }
+        }
+
+        textarea {
+            margin: 0 0 20px 0;
+            border-radius: 3px;
+            border: none;
+            &:focus{
+                outline: none;
+                border: 2px solid $risd-blue;
+            }
+        }
+
+        .contacto__submit {
+            height: 4rem;
+            font-size: 1.5rem;
+            color: black;
+            &:focus{
+                outline: none;
+                border: none;
+            }
+        }
+
+    }
+
+    .contacto__datos {
+        width: 400px;
+        margin: 10px;
+
+        p {
+            font-size: 1.5rem;
+        }
+    }
 }

@@ -3,6 +3,15 @@ html {
   font-size: 62.5%;
 }
 
+hr {
+  width: 80%;
+  margin: auto;
+  height: 1px;
+  background-color: #ff007f;
+  border: none;
+  opacity: 100%;
+}
+
 /*--------Seccion: Sobre mi----------*/
 .sobreMi {
   min-height: 90vh;
@@ -50,6 +59,12 @@ html {
   padding: 1rem;
   border: 2px solid #004fff;
   border-radius: 5px;
+  transition: 0.5s;
+}
+.sobreMi .sobreMi__info .sobreMi__enlaces a:hover {
+  background-color: #004fff;
+  color: white;
+  border: 2px solid #004fff;
 }
 
 /*--------Seccion: Tecnologias----------*/
@@ -59,6 +74,9 @@ html {
   align-items: center;
   min-height: 50vh;
   padding: 5vh 10vw 5vh 10vw;
+}
+.tecnologias h2 {
+  font-size: 2.5rem;
 }
 .tecnologias .tecnologias__contenedor {
   display: flex;
@@ -114,6 +132,11 @@ html {
   flex-direction: column;
   align-items: center;
   padding: 5vh 10vw 5vh 10vw;
+  /*--------Proyectos: Contenedor A----------*/
+  /*--------Proyectos: Contenedor B----------*/
+}
+.proyectos h2 {
+  font-size: 2.5rem;
 }
 .proyectos p {
   font-size: 1.5rem;
@@ -141,6 +164,7 @@ html {
   width: 50%;
   display: flex;
   flex-direction: column;
+  padding: 0 4vw 0 0;
 }
 .proyectos .proyectos__contenedorA .proyectos__info p {
   font-size: 1.5rem;
@@ -161,10 +185,149 @@ html {
   border-radius: 5px;
   box-sizing: border-box;
   margin: 1rem 1rem 0 0;
+  transition: 0.5s;
+}
+.proyectos .proyectos__contenedorA .proyectos__info .proyectos__enlaces a:hover {
+  background-color: #004fff;
+  color: white;
+  border: 2px solid #004fff;
+}
+.proyectos hr {
+  width: 50%;
+  height: 0.5px;
+}
+.proyectos .proyectos__contenedorB {
+  display: flex;
+  min-height: 30vh;
+  padding: 5vh 0 5vh 0;
+}
+.proyectos .proyectos__contenedorB .proyectos__img {
+  width: 50%;
+  display: flex;
+  padding: 0 4vw 0 4vw;
+}
+.proyectos .proyectos__contenedorB .proyectos__img img {
+  height: 100%;
+  object-fit: cover;
+  margin: auto;
+  border-radius: 0 50px 0 50px;
+}
+.proyectos .proyectos__contenedorB .proyectos__info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 4vw;
+}
+.proyectos .proyectos__contenedorB .proyectos__info p {
+  font-size: 1.5rem;
+  text-align: justify;
+  margin: auto;
+  line-height: 2;
+}
+.proyectos .proyectos__contenedorB .proyectos__info .proyectos__enlaces {
+  display: flex;
+}
+.proyectos .proyectos__contenedorB .proyectos__info .proyectos__enlaces a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-align: center;
+  width: 20%;
+  padding: 1rem;
+  border: 2px solid #004fff;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin: 1rem 1rem 0 0;
+  transition: 0.5s;
+}
+.proyectos .proyectos__contenedorB .proyectos__info .proyectos__enlaces a:hover {
+  background-color: #004fff;
+  color: white;
+  border: 2px solid #004fff;
+}
+
+/*--------Seccion : Contacto----------*/
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 50vh;
+  padding: 5vh 10vw 5vh 10vw;
+}
+.contacto h2 {
+  font-size: 2.5rem;
+}
+.contacto form {
+  display: flex;
+  flex-direction: column;
+  background-color: #ff007f;
+  padding: 30px 50px 30px 50px;
+  border-radius: 25px;
+  margin: 50px 0 0 0;
+  width: 400px;
+}
+.contacto form label {
+  color: white;
+  font-size: 1.5rem;
+}
+.contacto form input {
+  height: 3rem;
+  margin: 0 0 10px 0;
+  border-radius: 3px;
+  border: none;
+  font-size: 1.5rem;
+}
+.contacto form input:focus {
+  outline: none;
+  border: 2px solid #004fff;
+}
+.contacto form textarea {
+  margin: 0 0 20px 0;
+  border-radius: 3px;
+  border: none;
+}
+.contacto form textarea:focus {
+  outline: none;
+  border: 2px solid #004fff;
+}
+.contacto form .contacto__submit {
+  height: 4rem;
+  font-size: 1.5rem;
+  color: black;
+}
+.contacto form .contacto__submit:focus {
+  outline: none;
+  border: none;
+}
+.contacto .contacto__datos {
+  width: 400px;
+  margin: 10px;
+}
+.contacto .contacto__datos p {
+  font-size: 1.5rem;
 }
 
 .header__nav {
   height: 10vh;
+  background-color: #ff007f;
+  padding: 0 11vw 0 11vw;
+}
+.header__nav a {
+  font-size: 1.8rem;
+  color: white;
+}
+.header__nav .nav__link {
+  border-right: 1px solid white;
+  padding-inline: 20px !important;
+}
+.header__nav .nav__link--z {
+  border: none;
+}
+.header__nav .header__brand {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.header__nav .header__brand:hover {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
